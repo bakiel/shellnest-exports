@@ -78,7 +78,7 @@
 
 <!-- Hero Section -->
 <section class="hero">
-  <div class="hero-bg" data-parallax="0.3">
+  <div class="hero-bg">
     <img src="assets/images/hero-landscape-new.jpg" alt="South African farmland at sunrise" onerror="this.src='assets/images/hero-landscape.jpg'">
   </div>
   <div class="hero-overlay"></div>
@@ -99,9 +99,20 @@
     </div>
   </div>
 
-  <!-- Cutout breakout element -->
-  <div class="hero-cutout" data-parallax="-0.15">
-    <img src="assets/images/cutouts/hero-products-cutout.png" alt="South African export products - rooibos tea, macadamia nuts">
+  <!-- Multi-layer parallax product elements -->
+  <div class="hero-parallax-layers">
+    <!-- Layer 1: Rooibos botanical (back, slow) -->
+    <div class="parallax-layer parallax-rooibos" data-speed="0.08">
+      <img src="assets/images/cutouts/breakout-rooibos-cutout.png" alt="">
+    </div>
+    <!-- Layer 2: Products composite (mid, medium) -->
+    <div class="parallax-layer parallax-products" data-speed="0.18">
+      <img src="assets/images/cutouts/hero-products-cutout.png" alt="South African export products">
+    </div>
+    <!-- Layer 3: Sugarcane (front, fast) -->
+    <div class="parallax-layer parallax-sugarcane" data-speed="0.28">
+      <img src="assets/images/cutouts/breakout-sugarcane-cutout.png" alt="">
+    </div>
   </div>
 
   <div class="hero-scroll">

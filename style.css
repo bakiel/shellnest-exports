@@ -752,19 +752,52 @@ button, input, textarea, select {
   50% { opacity: 1; transform: scaleY(1); }
 }
 
-/* Hero cutout breakout */
-.hero-cutout {
+/* Multi-layer parallax hero elements */
+.hero-parallax-layers {
   position: absolute;
-  bottom: -60px;
-  right: 8%;
-  z-index: 6;
-  width: clamp(200px, 22vw, 340px);
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25));
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  overflow: hidden;
 }
 
-.hero-cutout img {
+.parallax-layer {
+  position: absolute;
+  will-change: transform;
+  opacity: 0;
+}
+
+.parallax-layer img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Layer 1: Rooibos botanical - decorative, top-right, subtle */
+.parallax-rooibos {
+  top: -5%;
+  right: 2%;
+  width: clamp(180px, 18vw, 280px);
+  filter: brightness(1.2);
+  --target-opacity: 0.12;
+}
+
+/* Layer 2: Products composite - hero element, right-center */
+.parallax-products {
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
+  width: clamp(360px, 40vw, 640px);
+  filter: drop-shadow(0 30px 60px rgba(0,0,0,0.35)) drop-shadow(0 8px 20px rgba(0,0,0,0.2));
+}
+
+/* Layer 3: Sugarcane - bottom-right foreground, partial crop */
+.parallax-sugarcane {
+  bottom: -12%;
+  right: -3%;
+  width: clamp(140px, 14vw, 220px);
+  filter: brightness(1.1);
+  --target-opacity: 0.2;
 }
 
 /* ---- PAGE HERO (Inner pages - Split Screen) ---- */
@@ -1633,10 +1666,17 @@ button, input, textarea, select {
     height: 300px;
   }
 
-  .hero-cutout {
-    right: 4%;
-    width: 180px;
-    bottom: -30px;
+  .parallax-products {
+    width: clamp(260px, 30vw, 420px);
+    right: 3%;
+  }
+
+  .parallax-rooibos {
+    width: clamp(120px, 14vw, 200px);
+  }
+
+  .parallax-sugarcane {
+    width: clamp(100px, 10vw, 160px);
   }
 
   .gallery-grid {
@@ -1699,8 +1739,18 @@ button, input, textarea, select {
     width: 100%;
   }
 
-  .hero-cutout {
+  .parallax-rooibos,
+  .parallax-sugarcane {
     display: none;
+  }
+
+  .parallax-products {
+    width: 220px;
+    right: -5%;
+    top: auto;
+    bottom: -2%;
+    transform: none;
+    opacity: 0.35;
   }
 
   .value-chain-grid {
