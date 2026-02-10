@@ -247,36 +247,14 @@
         tl.fromTo(heroScroll, { opacity: 0 }, { opacity: 1, duration: 0.5 }, '-=0.1');
       }
 
-      // Staggered entrance for parallax product layers
-      var parallaxLayers = document.querySelectorAll('.parallax-layer');
-      if (parallaxLayers.length) {
-        // Products layer (main, center) - scale up from behind
-        var productsLayer = document.querySelector('.parallax-products');
-        if (productsLayer) {
-          tl.fromTo(productsLayer,
-            { opacity: 0, scale: 0.8, x: 80 },
-            { opacity: 1, scale: 1, x: 0, duration: 1.2, ease: 'power3.out' },
-            '-=0.3'
-          );
-        }
-        // Rooibos layer (back, decorative) - fade in softly
-        var rooibosLayer = document.querySelector('.parallax-rooibos');
-        if (rooibosLayer) {
-          tl.fromTo(rooibosLayer,
-            { opacity: 0 },
-            { opacity: 0.12, duration: 1.0, ease: 'power2.out' },
-            '-=0.8'
-          );
-        }
-        // Sugarcane layer (front, decorative) - slide up from bottom
-        var sugarcaneLayer = document.querySelector('.parallax-sugarcane');
-        if (sugarcaneLayer) {
-          tl.fromTo(sugarcaneLayer,
-            { opacity: 0, y: 40 },
-            { opacity: 0.2, y: 0, duration: 1.0, ease: 'power3.out' },
-            '-=0.7'
-          );
-        }
+      // Products cutout entrance - scale in from right
+      var productsLayer = document.querySelector('.parallax-products');
+      if (productsLayer) {
+        tl.fromTo(productsLayer,
+          { opacity: 0, scale: 0.8, x: 80 },
+          { opacity: 1, scale: 1, x: 0, duration: 1.2, ease: 'power3.out' },
+          '-=0.3'
+        );
       }
     }
 
