@@ -13,16 +13,12 @@
   const preloaderCounter = document.querySelector('.preloader-counter');
   const preloaderBar = document.querySelector('.preloader-bar');
   const preloaderBarFill = document.querySelector('.preloader-bar-fill');
-  const preloaderPaths = document.querySelectorAll('.preloader-path');
-
   if (preloader && typeof gsap !== 'undefined') {
     const tl = gsap.timeline();
 
-    // Animate SVG logo icon first
-    tl.to(preloaderIcon, { opacity: 1, scale: 1, duration: 0.5, ease: 'power3.out' })
-      .to('.preloader-path.gold', { opacity: 1, duration: 0.6, ease: 'power2.out' }, '-=0.2')
-      .to('.preloader-path.white', { opacity: 1, duration: 0.5, stagger: 0.08, ease: 'power2.out' }, '-=0.3')
-      .to(preloaderLogo, { opacity: 1, y: 0, duration: 0.5, ease: 'power3.out' }, '-=0.2')
+    // Animate logo icon
+    tl.to(preloaderIcon, { opacity: 1, scale: 1, duration: 0.8, ease: 'power3.out' })
+      .to(preloaderLogo, { opacity: 1, y: 0, duration: 0.5, ease: 'power3.out' }, '-=0.3')
       .to(preloaderBar, { opacity: 1, duration: 0.3 }, '-=0.2')
       .to(preloaderCounter, { opacity: 1, duration: 0.3 }, '-=0.2');
 

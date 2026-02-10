@@ -136,19 +136,9 @@ button, input, textarea, select {
   transform: scale(0.8);
 }
 
-.preloader-icon svg {
+.preloader-icon img {
   width: 80px;
   height: 92px;
-}
-
-.preloader-path.gold {
-  fill: #c88d2a;
-  opacity: 0;
-}
-
-.preloader-path.white {
-  fill: #F5F0E8;
-  opacity: 0;
 }
 
 .preloader-logo {
