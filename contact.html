@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - ShellNest</title>
+<meta name="description" content="Get in touch with ShellNest for premium South African agricultural export enquiries, samples, and partnership opportunities.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bakiel.github.io/shellnest-exports/contact.html">
+<meta property="og:title" content="Contact Us - ShellNest">
+<meta property="og:description" content="Get in touch for premium South African agricultural export enquiries, samples, and partnerships.">
+<meta property="og:image" content="https://bakiel.github.io/shellnest-exports/assets/images/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg class="noise-svg"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></svg>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- Navigation -->
+<nav class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <img src="assets/logos/shellnest-white-icon.svg" alt="ShellNest" class="logo-dark-bg">
+        <img src="assets/logos/shellnest-primary-icon.svg" alt="ShellNest" class="logo-light-bg">
+      </div>
+      <div class="nav-logo-text"><span class="logo-s">Shell</span><span class="logo-n">Nest</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="exports.html" class="nav-link">Export Process</a>
+      <a href="sugarcane.html" class="nav-link">Sugarcane</a>
+      <a href="contact.html" class="nav-cta active">Contact Us</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="products.html" class="nav-link">Products</a>
+  <a href="exports.html" class="nav-link">Export Process</a>
+  <a href="sugarcane.html" class="nav-link">Sugarcane</a>
+  <a href="contact.html" class="nav-link active">Contact Us</a>
+</div>
+
+<!-- Page Hero: Split Screen (Shorter) -->
+<section class="page-hero" style="min-height: 45vh;">
+  <div class="page-hero-text">
+    <span class="section-label" data-animate="fade-up">Contact Us</span>
+    <h1 data-animate="fade-up" data-delay="0.1">Get in Touch</h1>
+    <p data-animate="fade-up" data-delay="0.2">Let's build a partnership. Whether you're exploring South African products for the first time or looking for a reliable supply partner, we're ready to talk.</p>
+  </div>
+  <div class="page-hero-image">
+    <div class="img-reveal" style="background: var(--forest);"></div>
+    <img src="assets/images/sa-landscape-hero.png" alt="South African landscape" onerror="this.src='assets/images/hero-landscape.png'">
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="content-section" style="position: relative;">
+  <div class="tex-layer" style="opacity: 0.04;">
+    <img src="assets/textures/tex-cream-paper.png" alt="">
+  </div>
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="section-center">
+      <span class="section-label">Enquiries</span>
+      <h2 class="section-heading" data-split>Send Us a Message</h2>
+      <div class="accent-line accent-center"></div>
+    </div>
+
+    <div class="contact-form-grid">
+      <!-- Form -->
+      <form data-animate="fade-right">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Company name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+27 ...">
+        </div>
+        <div class="form-group">
+          <label for="interest">Area of Interest</label>
+          <select id="interest" name="interest" required>
+            <option value="" disabled selected>Select a product or service</option>
+            <option value="rooibos">Rooibos Tea</option>
+            <option value="honeybush">Honeybush Tea</option>
+            <option value="macadamia">Macadamia Nuts</option>
+            <option value="sugarcane">Sugarcane Products</option>
+            <option value="samples">Request Samples</option>
+            <option value="other">Other Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your requirements, volumes, and destination market..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Enquiry</button>
+      </form>
+
+      <!-- Contact Info Cards -->
+      <div class="contact-cards" data-animate="fade-left">
+        <div class="contact-card">
+          <h4>Email</h4>
+          <p>exports@shellnest.co.za</p>
+        </div>
+        <div class="contact-card">
+          <h4>Phone</h4>
+          <p>+27 79 625 0079<br>+27 71 876 1947</p>
+        </div>
+        <div class="contact-card">
+          <h4>Head Office</h4>
+          <p>Johannesburg, South Africa</p>
+        </div>
+        <div class="contact-card">
+          <h4>Sugarcane Operations</h4>
+          <p>KwaZulu-Natal, South Africa</p>
+        </div>
+        <div class="contact-card accent">
+          <h4>Business Hours</h4>
+          <p>Monday -- Friday<br>08:00 -- 17:00 SAST</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" style="position: relative;">
+  <div class="tex-layer" style="opacity: 0.06;"><img src="assets/textures/tex-leather-dark.png" alt=""></div>
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-s">Shell</span><span class="logo-n">Nest</span>
+        <p class="footer-tagline">Premium South African Agricultural Exports</p>
+        <p class="footer-desc">Ethically sourced rooibos, honeybush, and macadamia from the heart of South Africa.</p>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4><a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="exports.html">Export Process</a><a href="sugarcane.html">Sugarcane</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Products</h4><a href="products.html#rooibos">Rooibos Tea</a><a href="products.html#honeybush">Honeybush Tea</a><a href="products.html#macadamia">Macadamia Nuts</a></div>
+      <div class="footer-col"><h4>Get in Touch</h4><p class="footer-contact-item">exports@shellnest.co.za</p><p class="footer-contact-item">+27 79 625 0079</p><p class="footer-contact-item">+27 71 876 1947</p><p class="footer-contact-item">Johannesburg, South Africa</p></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ShellNest (Pty) Ltd. All rights reserved.</p>
+      <button class="scroll-top magnetic" aria-label="Scroll to top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg></button>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+<script>gsap.registerPlugin(ScrollTrigger);</script>
+<script src="script.js"></script>
+</body>
+</html>
