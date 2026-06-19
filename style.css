@@ -1067,13 +1067,13 @@ button, input, textarea, select {
   line-height: 1.7;
 }
 
-/* ---- SUGARCANE PREVIEW ---- */
-.section-sugarcane-preview {
+/* ---- WELLNESS PREVIEW ---- */
+.section-wellness-preview {
   background: var(--cream);
   position: relative;
 }
 
-.sugarcane-preview-grid {
+.wellness-preview-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(40px, 5vw, 80px);
@@ -1612,7 +1612,7 @@ button, input, textarea, select {
 @media (max-width: 1024px) {
   .intro-grid,
   .content-grid,
-  .sugarcane-preview-grid {
+  .wellness-preview-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
